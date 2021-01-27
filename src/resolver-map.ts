@@ -1,4 +1,4 @@
-import { EmployeeResolver } from './employee/employee-resolver';
+import { MinimumRequirementResolver } from './min-requirement/minrequirement-resolver';
 
 import { GraphQLScalarType } from 'graphql';
 import { Kind } from 'graphql/language';
@@ -23,5 +23,5 @@ export const BaseResolvers = {
   }),
 };
 
-const resolverMap = merge(BaseResolvers, EmployeeResolver);
+const resolverMap = merge(BaseResolvers, MinimumRequirementResolver);
 export default resolverMap;

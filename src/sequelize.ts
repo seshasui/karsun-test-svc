@@ -1,10 +1,10 @@
 import { Sequelize } from 'sequelize-typescript';
 
-import { Employee } from './employee/employee';
+import { MinimumRequirement } from './min-requirement/minrequirement';
 
-export const sequelize = new Sequelize('afp', 'afp_user', 'test', {
+export const sequelize = new Sequelize('minReq', 'afp_user', 'test', {
   host: 'localhost',
   dialect: 'mysql',
-  models: [Employee],
+  models: [MinimumRequirement],
   repositoryMode: true,
 });
