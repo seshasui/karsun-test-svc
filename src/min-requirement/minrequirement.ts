@@ -9,7 +9,7 @@ import {
 
 @ObjectType()
 @Table
-export class MinimumRequirements extends Model<MinimumRequirements> {
+export class MinimumRequirement extends Model<MinimumRequirement> {
   @Field(() => ID)
   @AutoIncrement
   @PrimaryKey
