@@ -1,0 +1,25 @@
+scalar Date
+
+
+input EmployeeInput {
+    fullname: String!
+    username: String!
+    role: String!
+}
+
+
+type Employee {
+    id: ID!
+    fullname: String!
+    username: String!
+    role: Role!
+}
+
+
+type Query {
+    getEmployee (id: String!): Employee
+}
+
+type Mutation {
+    createEmployee(input: EmployeeInput!): Employee!
+}
